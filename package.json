@@ -1,0 +1,26 @@
+{
+  "name": "hack-a-thing-21f-1-achoudhari",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dartmouth-cs98/hack-a-thing-21f-1-achoudhari.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dartmouth-cs98/hack-a-thing-21f-1-achoudhari/issues"
+  },
+  "homepage": "https://github.com/dartmouth-cs98/hack-a-thing-21f-1-achoudhari#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "socket.io": "^4.2.0"
+  }
+}
