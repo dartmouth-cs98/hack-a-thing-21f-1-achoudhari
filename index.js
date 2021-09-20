@@ -1,10 +1,9 @@
 /*
 * This is the backend portion of the project that deals with server connections for the chat app
 */
-
 const app = require("express")();
 const server = require("http").createServer(app);
-import cors from "cors";
+const cors = require("cors");
 
 const io = require("socket.io")(server, {
 	cors: {
