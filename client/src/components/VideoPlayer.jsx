@@ -5,23 +5,40 @@ const styles = {
   video: {
     width: '550px',
     height: '300px',
-  }
+  },
+  streamWrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    padding: '20px',
+    backgroundColor: 'white',
+    borderStyle: 'solid',
+    borderRadius: '10px',
+  },
+  videoWrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '10px',
+  },
+
 }
 
 const VideoPlayer = () => {
   const { name, callAccepted, video, userVideo, callEnded, stream, call  } = useContext(SocketContext);
   return (
-    <div>
+    <div style={styles.streamWrapper}>
       {!!stream && (
-        <div>
-          <div>{name || 'Name'}</div>
+        <div style={styles.videoWrapper}>
+          <div style={{fontSize: '30px'}}>{name || ''}</div>
           <video playsInline muted ref={video} autoPlay style={styles.video}/>
         </div>
         )}
 
       {(callAccepted && !callEnded &&
-        <div>
-          <div>{call.name || 'Name'}</div>
+         <div style={styles.videoWrapper}>
+          <div style={{fontSize: '30px'}}>{call.name || ''}</div>
           <video playsInline ref={userVideo} autoPlay style={styles.video}/>
         </div>
       )}
