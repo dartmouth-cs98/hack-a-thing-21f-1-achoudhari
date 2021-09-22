@@ -8,15 +8,19 @@ I decided to build a small video chatting app that used `Simple Peer` to establi
 The pictures below demonstrate me calling myself because this app is not deployed anywhere so I am the only person with a laptop that can connect to my own localhost. However, if the app were deployed as well as the backend socket connection funcionality, anyone would be able to call anyone else. 
 
 ![](./images/basic.png)
+
 This shows the base app before you call anyone.
 
 ![](./images/call.png)
+
 This shows how you can copy your own ID and paste it into the ID to Call section. The ID to Call section is where you can paste anyone's ID and make a call to them.
 
 ![](./images/pickup.png)
+
 This image shows how you get a notification when someone calls you. You can either answer or decline the call.
 
 ![](./images/duringcall.png)
+
 This image shows what the app looks like during a call. You can see both streams, and have the option to hang up the call below the ID to Call section. 
 
 ## Who Did What?
