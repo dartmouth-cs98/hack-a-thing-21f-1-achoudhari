@@ -1,6 +1,18 @@
 # Hack Technology / Project Attempted
 The technology I wanted to learn was WebRTC, and specifically how to use APIs that wrap the WebRTC API to make usage easier. The specific React library I focused on was [`Simple Peer`](https://github.com/feross/simple-peer).
 
+## How to Run
+Clone this repository locally.
+
+CD into repo and run `npm i` to get all the backend dependencies set up. 
+CD into `./client` and run `npm i` to get all the frontend dependencies set up.
+
+CD back into root directory and run `nodemon index.js` to start up backend server, which will run on port 5000.
+
+In a new terminal, CD into `./client` and run `npm start` to start the frontend app, which will run on port 3000. 
+
+In your browser, nagivate to `http://localhost:3000` and enjoy!
+
 ## What you built? 
 
 I decided to build a small video chatting app that used `Simple Peer` to establish connections between two users of the app and enable video and voice communication in a simple chatting interface. In addition to video chatting functionality, the app also notifies a user when they are being called and allows a user to pick up, hang up, and end a call. 
@@ -41,7 +53,7 @@ The process for creating the App was not as simple as just following the tutoria
 
 I also had an issue I was unable to resolve regarding using components from Material-UI. For some reason, I got an error that there was a mismatch between the React versions whenever I would include any component from Material-UI. The tutorial made use of these components for premade styling, so I ended up having to style the whole app manually. However, this was not my biggest concern since I was mainly focused on the video communication technology provided by `Simple Peer`. 
 
-One thing I tried to do but was unable to do was set up a chatting functionality between people in the call due to the limitations of `Simple Peer`. This library only supports video and audio communication, and does not implement WebRTC's chat functionality. I guess this is why it was called `Simple Peer`, but if I want to expand this project I would have to move away from this library and either implement using WebRTC directly or use a library that has more advanced functionality like `Peer.js`.  
+One thing I tried to do but was unable to do was set up a chatting functionality between people in the call due to the limitations of `Simple Peer`. This library only supports video and audio communication, and does not implement WebRTC's chat functionality. I guess this is why it was called `Simple Peer`, but if I want to expand this project I would have to move away from this library and either implement using WebRTC directly or use a library that has more advanced functionality like `Peer.js`. If someone were trying to add some video chatting functionality into their app, this would be fine to use as long as the video chat is not the main point of the app. That is, this library makes it easy to include video chatting functionality, but it would be a very limited video chat that would not allow you to do much. Therefore, for more advanced video chatting one should stray away from `Simple Peer`, but if someone wants to quickly get video chatting set up and is not concerned about advanced features, then this is thelibrary to use. 
 
 ## Authors
 
