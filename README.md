@@ -5,7 +5,7 @@ The technology I wanted to learn was WebRTC, and specifically how to use APIs th
 
 I decided to build a small video chatting app that used `Simple Peer` to establish connections between two users of the app and enable video and voice communication in a simple chatting interface. In addition to video chatting functionality, the app also notifies a user when they are being called and allows a user to pick up, hang up, and end a call. 
 
-The pictures below demonstrate me calling myself because this app is not deployed anywhere so I am the person with a laptop that can connect to my own localhost. However, if the app were deployed as well as the backend socket connection funcionality, anyone would be able to call anyone else. 
+The pictures below demonstrate me calling myself because this app is not deployed anywhere so I am the only person with a laptop that can connect to my own localhost. However, if the app were deployed as well as the backend socket connection funcionality, anyone would be able to call anyone else. 
 
 ![](./images/basic.png)
 This shows the base app before you call anyone.
